@@ -32,7 +32,7 @@ body {
 }
 
 p {
-  margin: 0;
+  margin: 0px;
 }
 
 .container {
@@ -80,6 +80,7 @@ p {
   background-color: #4aaaa5;
   padding-left: 30px;
   padding-right: 30px;
+  float: left;
 }
 
 .header-name-box-text {
@@ -211,10 +212,23 @@ p {
   width:100%;
 }
 
+.photo-col {
+	padding: 0;
+	margin-right: 20px;
+}
+
 @media screen and (max-width:980px) {
 	.photo-col {
 		width: 100%;
 		margin-bottom: 20px;
+	}
+
+	.side-heading {
+		font-size: 2.3vw;
+	}
+
+	.port-flex {
+		width: 100%;
 	}
 }
 
@@ -230,7 +244,13 @@ p {
 	}
 	.photo-col {
 		width: 33.33%;
-		margin-bottom: 0;
+		margin-bottom: 0px;
+	}
+	.side-heading {
+		font-size: 23px;
+	}
+	.port-flex {
+		width: 50%;
 	}
 }
 
@@ -240,6 +260,9 @@ p {
 		margin-bottom: 20px;
 	}
 	.header-container {
+		width: 100%;
+	}
+	.header-name-box {
 		width: 100%;
 	}
 	.nav-flex {
@@ -252,11 +275,14 @@ p {
 	.navbar-right {
 		padding-top:20px;
 	}
-	ul {
+	.navbar-nav {
 		width: 100%;
 	}
-	li {
+	.navbar-nav li {
 		width: 33.33%;
+	}
+	.port-flex {
+		width: 100%;
 	}
 }
 

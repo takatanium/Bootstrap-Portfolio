@@ -36,12 +36,12 @@ p {
 }
 
 .container {
-  width: 960px;
-  padding: 0px;
+	width: 95%;
+  max-width: 960px;
 }
 
 .navbar {
-  height: 100px;
+  min-height: 100px;
   background-color: #ffffff;
   border: 0;
   border-bottom: solid #cccccc 2px;
@@ -50,20 +50,24 @@ p {
 }
 
 .navbar-right {
-  height: 98px;
+  height: 60px;
   padding-top: 41px;
   margin: 0px;
+  background: white;
+  float: right;
 }
 
 .navbar-nav li a {
   font-size: 16px;
   padding: 0px;
+  text-align: center;
 }
 
 .navbar-nav>li{
   border-right: 1px solid #cccccc;
   padding-left: 20px;
   padding-right: 20px;
+  float: left;
 }
 
 .navbar-nav>li:last-child{
@@ -76,7 +80,6 @@ p {
   background-color: #4aaaa5;
   padding-left: 30px;
   padding-right: 30px;
-  border-bottom: solid #cccccc 2px;
 }
 
 .header-name-box-text {
@@ -124,12 +127,9 @@ p {
   line-height: 150%;
 }
 
-#aboutPhoto {
-  width: 150px;
-  height: 150px;
-  margin-right: 20px;
-  margin-bottom: 0px;
-  float: left;
+.content-col {
+   padding: 0 !important;
+   margin: 0 10px 10px 0 !important;
 }
 
 .side-content {
@@ -211,38 +211,54 @@ p {
   width:100%;
 }
 
-
-@media screen and (max-width: 992px) {
-  .container {
-    width: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  #aboutPhoto {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
-  .portfolio-text {
-    font-size: 3vw;
-  }
+@media screen and (max-width:980px) {
+	.photo-col {
+		width: 100%;
+		margin-bottom: 20px;
+	}
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  #aboutPhoto {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 0px;
-  }
+@media (max-width:800px) {
+	.content-flex {
+		width: 100%;
+	}
+	.side-flex {
+		width: 100%;
+	}
+	.icon-col {
+		width: 16.67%;
+	}
+	.photo-col {
+		width: 33.33%;
+		margin-bottom: 0;
+	}
 }
 
+@media (max-width: 650px) {
+	.photo-col {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.header-container {
+		width: 100%;
+	}
+	.nav-flex {
+		width: 100%;
+		padding:0;
+	}
+	.header-name-box-text {
+		text-align: center;
+	}
+	.navbar-right {
+		padding-top:20px;
+	}
+	ul {
+		width: 100%;
+	}
+	li {
+		width: 33.33%;
+	}
+}
 
 /*Animations*/
 #github:hover, 

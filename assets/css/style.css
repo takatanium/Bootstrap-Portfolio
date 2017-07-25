@@ -31,6 +31,10 @@ body {
   color: #777777;
 }
 
+p {
+  margin: 0;
+}
+
 .container {
   width: 960px;
   padding: 0px;
@@ -87,7 +91,6 @@ body {
   background-color: #666666;
   height: 100px;  
   border-top: solid #4aaaa5 5px;
-  margin-top: 30px;
 }
 
 .footer-text {
@@ -104,8 +107,9 @@ body {
 
 .main-content {
   background-color: #ffffff;
-  padding: 30px;
+  padding: 30px 50px 30px 50px;
   border: solid #cccccc 1px;
+  margin-bottom: 30px;
 }
 
 .main-heading-text {
@@ -130,26 +134,24 @@ body {
 
 .side-content {
   background-color: #ffffff;
-  padding: 25px;
+  padding: 25px 40px 25px 40px;
   border: solid #cccccc 1px;
+  margin-bottom: 30px;
 }
 
 .side-heading {
   color: #4aaaa5;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid #cccccc 1px;
 }
 
 .connect-box {
-  padding-top: 25px;
-  border-top: solid #cccccc 1px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  padding-top: 20px;
 }
 
-.connect-icon {
-  height: 65px;
-  width: 65px;
+.icon-col {
+   padding: 5px !important;
+   margin: 0 !important;
 }
 
 .form-text {
@@ -177,21 +179,10 @@ body {
   font-size: 20px;
 }
 
-.portfolio-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 40px;
-}
-
 .portfolio-box {
   position: relative;
   z-index: 1;
-}
-
-.portfolio-img {
-  width: 275px;
-  height: 175px;
+  margin-bottom: 30px;
 }
 
 .portfolio-text-box {
@@ -206,7 +197,7 @@ body {
 
 .portfolio-text {
   color: white;
-  line-height: 210%;
+  line-height: 200%;
   text-align: center;
   font-family: 'Georgia', Times, Times New Roman, serif;
   font-size: 125%;
@@ -216,8 +207,12 @@ body {
   margin-bottom: 0px;
 }
 
-@media screen and (max-width: 980px) {
+.portfolio-img {
+  width:100%;
+}
 
+
+@media screen and (max-width: 992px) {
   .container {
     width: 100%;
     padding-left: 40px;
@@ -230,155 +225,33 @@ body {
     margin-bottom: 20px;
   }
 
-  .connect-icon {
-    width: 90%;
-    height: auto;
-  }
-
-  .side-heading {
-    font-size: 2.1vw;
-  }
-
-  .portfolio-row {
-    flex-direction: column;
-    margin-bottom: 0px;
-  }
-
-  .portfolio-box {
-    margin-bottom: 20px;
-  }
-
-  .portfolio-img {
-    width: 100%;
-    height: auto;
-  }
-
   .portfolio-text {
-    line-height: 200%;
     font-size: 3vw;
   }
 }
 
 @media screen and (max-width: 768px) {
-
   .container {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  .navbar-header {
-    margin-right: 50px;
-    margin-left: 50px;
-  }
-  
   #aboutPhoto {
     width: 150px;
     height: 150px;
     margin-bottom: 0px;
   }
-
-  .main-content {
-    margin-bottom: 30px;
-  }
-
-  .connect-box {
-    justify-content: start;
-  }
-
-  .connect-icon {
-    margin-right: 20px;
-    height: 65px;
-    width: 65px;
-  }
-
-  .side-heading {
-    font-size: 23px;
-  }
-
-  .portfolio-row {
-    flex-direction: row;
-  }
-
-  .portfolio-box {
-    width: 48%;
-  }
 }
 
-@media screen and (max-width: 640px) {
-  #aboutPhoto {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
 
-  .portfolio-row {
-    flex-direction: column;
-  }
-
-  .portfolio-box {
-    width: 100%;
-  }
-
-  .portfolio-text {
-    line-height: 210%;
-    font-size: 4.5vw;
-  }
-}
-
-#github:hover {
-    position: relative;
-    -webkit-animation: boxmove 1s linear 0s infinite;
-    -moz-animation: boxmove 1s linear 0s infinite;
-    animation: boxmove 1s linear 0s infinite;
-}
-
-#linkedin:hover {
-    position: relative;
-    -webkit-animation: spin 1s linear 0s infinite;
-    -moz-animation: spin 1s linear 0s infinite;
-    animation: spin 1s linear 0s infinite;
-}
-
+/*Animations*/
+#github:hover, 
+#linkedin:hover,
 #stackover:hover {
     position: relative;
     -webkit-animation: pulse 1s linear 0s infinite;
     -moz-animation: pulse 1s linear 0s infinite;
     animation: pulse 1s linear 0s infinite;
-}
-
-@-moz-keyframes boxmove {
-    0%   {left:0px; top:0px;}
-    25%  {left:10px; top:0px;}
-    50%  {left:10px; top:10px;}
-    75%  {left:0px; top:10px;}
-    100% {left:0px; top:0px;}
-}
-@-webkit-keyframes boxmove {
-    0%   {left:0px; top:0px;}
-    25%  {left:10px; top:0px;}
-    50%  {left:10px; top:10px;}
-    75%  {left:0px; top:10px;}
-    100% {left:0px; top:0px;}
-}
-@keyframes boxmove {
-    0%   {left:0px; top:0px;}
-    25%  {left:10px; top:0px;}
-    50%  {left:10px; top:10px;}
-    75%  {left:0px; top:10px;}
-    100% {left:0px; top:0px;}
-}
-
-@-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
-}
-@-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
-}
-@keyframes spin {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
 }
 
 @-moz-keyframes pulse {

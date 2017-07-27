@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <title>About Tait</title>
+  <title>Contact</title>
 </head>
 
 <body>
@@ -22,9 +22,9 @@
         </div>
         <div class="col-xs-6 col-sm-6 nav-flex">
           <ul class="nav navbar-nav navbar-right">
-            <li><a class="first-link" href="index.html">About</a></li> 
+            <li><a href="index.html">About</a></li> 
             <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a class="last-link" href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -36,22 +36,19 @@
       <div class="col-xs-12 col-sm-8 col-md-8 content-flex">
         <section class="main-content">
           <div class="row">
-              <h1 class="main-heading-text">About Me</h1>
+              <h1 class="main-heading-text">Contact</h1>
           </div>
           <div class="row">
             <div class="main-content-box">
-              <div class="col-md-12 content-col">
-                <div class="col-xs-12 col-sm-12 col-md-4 photo-col"><img src="assets/images/TaitPic.jpg" id="aboutPhoto" class="img-responsive portfolio-img" alt="Tait Picture"></div>
-                <p>
-                I am the founder of Takatanium LLC, a business and scientific consulting firm. My clients have consisted of start-ups in nanotechnology, biotechnology, robotics, and data analytics. I have a strong interest in utilizing new technologies to accelerate the progress of the physical sciences.
-                </p>
-                <p>
-                In 2010, I graduated from the Georgia Institute of Technology with a PhD in Quantum Computational Chemistry. I then worked as a Post-Doctoral Associate at Cornell University in Biotechnology researching adhesion properties of circulating tumor cells. Currently, my main specialties as a consultant are modeling chemical systems via quantum and molecular mechanics and developing various scientific software applications. I have experience in C, C++, HTML, CSS, JS, PHP, Python, and Perl.
-                </p>
-                <p>
-                On a less technical side, I worked as a ski and bicycle technician throughout college, where I was also the associate store manager. More recently, I was a personal trainer in San Diego, CA. 
-                </p>
-              </div>
+              <form>
+                <label class="form-text">Name</label><br>
+                <input type="text" class="form-input" name="name" placeholder="John Smith"><br>
+                <label class="form-text">Email</label><br>
+                <input type="text" class="form-input" name="email" placeholder="example@gmail.com"><br>
+                <label class="form-text">Message</label><br>
+                <textarea class="form-input form-textarea"></textarea>
+                <button class="form-button">Submit</button>
+              </form>
             </div>
           </div>
         </section>

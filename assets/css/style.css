@@ -109,6 +109,7 @@ body>.container {
 .content-col {
   text-align: left;
   line-height: 150%;
+  text-align: justify;
 }
 
 .photo-col {
